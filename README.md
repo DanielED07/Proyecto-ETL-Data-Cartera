@@ -1,6 +1,6 @@
 # Pipeline de Indicadores Financieros - SFC (Colombia)
 
-Este proyecto es un pipeline de ingeniería de datos (ETL) que automatiza la extracción, transformación y carga de indicadores de las compañías de financiamiento y bancos en Colombia, utilizando la API de **Datos Abiertos (datos.gov.co)** de la Superintendencia Financiera de Colombia.
+Este proyecto es un pipeline de ingeniería de datos (ETL) que automatiza la extracción, transformación y carga de datos de cartera de las compañías de financiamiento y bancos en Colombia, utilizando la API de **Datos Abiertos (datos.gov.co)**.
 
 ## 1. Estructura del Proyecto
 
@@ -19,5 +19,5 @@ Este proyecto es un pipeline de ingeniería de datos (ETL) que automatiza la ext
 
 1. Clona este repositorio:
    ```bash
-   git clone [https://github.com/tu-usuario/nombre-del-proyecto.git](https://github.com/tu-usuario/nombre-del-proyecto.git)
+   git clone [https://github.com/DanielED07/Proyecto-ETL-Data-Cartera.git](https://github.com/DanielED07/Proyecto-ETL-Data-Cartera.git)
    cd nombre-del-proyecto
