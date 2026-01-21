@@ -15,9 +15,15 @@ Este proyecto es un pipeline de ingeniería de datos (ETL) que automatiza la ext
 * Python 3.8 o superior.
 * Conexión a internet (para llamadas a la API).
 
-## 3. Instalación
+## 3. Instalación y Ejecución
 
 1. Clona este repositorio:
    ```bash
    git clone [https://github.com/DanielED07/Proyecto-ETL-Data-Cartera.git](https://github.com/DanielED07/Proyecto-ETL-Data-Cartera.git)
    cd nombre-del-proyecto
+   ```
+
+2. Ejecutar ETL (main.py):
+   ```bash
+   python main.py --fecha 2024-05-31
+   ```
