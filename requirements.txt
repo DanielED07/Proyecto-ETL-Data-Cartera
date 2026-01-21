@@ -1,0 +1,12 @@
+# Extracción de datos
+requests==2.32.4
+
+# Procesamiento de datos
+pandas==2.3.3
+numpy==2.0.2
+
+# Base de Datos (SQLite viene nativo en Python, pero pandas usa SQLAlchemy para mejores tipos)
+SQLAlchemy==1.4.39
+
+# Utilidades
+python-dateutil==2.9.0.post0

@@ -1,0 +1,44 @@
+# --- Entorno Virtual ---
+venv/
+.env
+env/
+ENV/
+
+# --- Datos y Bases de Datos ---
+# No subimos la data procesada ni logs para mantener el repo limpio
+data/raw/*
+data/processed/*.db
+data/processed/*.csv
+logs/*.log
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- IDEs y Editores ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints
