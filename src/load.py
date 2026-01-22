@@ -4,7 +4,7 @@ from src.utils import setup_logger
 
 logger = setup_logger()
 
-def load_to_sqlite(df, db_path="data/processed/indicadores_sfc.db", table_name="indicadores_financieros"):
+def load_to_sqlite(df, db_path="data/processed/cartera_bancos_cf.db", table_name="cartera_bancos_cf"):
     """
     Carga el DataFrame transformado en una base de datos SQLite.
     """
@@ -23,7 +23,7 @@ def load_to_sqlite(df, db_path="data/processed/indicadores_sfc.db", table_name="
         # if_exists='replace' sobrescribe la tabla cada vez. 
         # Usa 'append' si quieres mantener un histórico (requiere manejar duplicados).
         df.to_sql(table_name, conn, if_exists='replace', index=False)
-        df.to_excel("data/processed/indicadores_sfc.xlsx", index=False)
+        df.to_excel("data/processed/cartera_bancos_cf.xlsx", index=False)
         
         # Confirmar cambios
         conn.commit()

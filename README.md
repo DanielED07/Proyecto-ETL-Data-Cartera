@@ -3,12 +3,23 @@
 Este proyecto es un pipeline de ingeniería de datos (ETL) que automatiza la extracción, transformación y carga de datos de cartera de las compañías de financiamiento y bancos en Colombia, utilizando la API de **Datos Abiertos (datos.gov.co)**.
 
 ## 1. Estructura del Proyecto
-
-* **`config/`**: Parámetros estáticos y queries de la API.
-* **`data/`**: Almacenamiento de la base de datos procesada (SQLite).
-* **`logs/`**: Registros de ejecución para auditoría y errores.
-* **`src/`**: Código fuente modular (Extract, Transform, Load, Utils).
-* **`main.py`**: Orquestador principal del pipeline.
+```bash
+Proyecto-ETL-Data-Cartera
+├── config/
+│   └── settings.py              # Define las CONSTANTES
+├── data/
+│   └── processed/               # Volumen Procesado: Archivos xlsx y .db cargan aqui
+├── logs/                        # Logs Procesados: logs cargan aqui
+├── src/
+│   ├── extract.py               # Llamado a la API 
+│   ├── load.py                  # Lógica para guardar en SQLite o bases de datos
+│   ├── transform.py             # Lógica de limpieza y definición de datos
+│   └── utils.py                 # Funciones auxiliares
+├── .gitignore                   # Archivos a ignorar en el repo
+├── main.py                      # Orquestador
+├── README.md                    # Documentación del proyecto
+└── requirements.txt             # Paquetes necesarios
+```
 
 ## 2. Requisitos Previos
 
